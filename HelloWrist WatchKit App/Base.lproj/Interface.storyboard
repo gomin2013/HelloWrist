@@ -26,41 +26,24 @@
                     <connections>
                         <outlet property="button" destination="KSw-Nv-8aa" id="jJO-QV-hqY"/>
                         <outlet property="messageLabel" destination="XZb-Q2-XPa" id="Udp-nw-jKz"/>
+                        <segue destination="jmP-mg-zUu" kind="relationship" relationship="nextPage" id="17h-4U-LID"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="219.52173913043478" y="344.55357142857144"/>
         </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <!--Interface Controller-->
+        <scene sceneID="xhm-Mp-ddb">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller id="jmP-mg-zUu">
                     <items>
-                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="Second Page" textAlignment="center" baselineAdjustment="alignCenters" id="4UC-iZ-Zz1">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
-                    <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
-                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
-                    </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
-            <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="HelloWrist_WatchKit_App" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="Niz-AI-uX2">
-            <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="HelloWrist_WatchKit_App" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="447" y="345"/>
         </scene>
     </scenes>
 </document>
