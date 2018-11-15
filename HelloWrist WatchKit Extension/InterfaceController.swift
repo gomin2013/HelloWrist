@@ -12,23 +12,6 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     
-    private var sayingHello = true
-    
-    @IBOutlet var messageLabel: WKInterfaceLabel!
-    @IBOutlet var button: WKInterfaceButton!
-    
-    @IBAction func saySometings() {
-        if sayingHello {
-            button.setTitle("Say Goodbye")
-            messageLabel.setText("Hello Wrist!")
-            sayingHello = false
-        } else {
-            button.setTitle("Say Hello")
-            messageLabel.setText("Bye Wrist!")
-            sayingHello = true
-        }
-    }
-    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         

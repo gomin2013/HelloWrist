@@ -14,36 +14,28 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HelloWrist_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="50" alignment="center" verticalAlignment="center" textAlignment="center" id="XZb-Q2-XPa">
-                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
-                        </label>
-                        <button width="1" alignment="center" verticalAlignment="center" title="Say Hello" id="KSw-Nv-8aa">
+                        <button width="1" alignment="center" verticalAlignment="center" title="Say Hello" id="4S3-ex-K4I">
                             <connections>
-                                <action selector="saySometings" destination="AgC-eL-Hgc" id="92v-12-Gla"/>
+                                <segue destination="SkN-jl-xDg" kind="push" id="G63-SM-tqR"/>
                             </connections>
                         </button>
                     </items>
-                    <connections>
-                        <outlet property="button" destination="KSw-Nv-8aa" id="jJO-QV-hqY"/>
-                        <outlet property="messageLabel" destination="XZb-Q2-XPa" id="Udp-nw-jKz"/>
-                        <segue destination="jmP-mg-zUu" kind="relationship" relationship="nextPage" id="17h-4U-LID"/>
-                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="219.52173913043478" y="344.55357142857144"/>
         </scene>
         <!--Interface Controller-->
-        <scene sceneID="xhm-Mp-ddb">
+        <scene sceneID="eLA-E6-hU9">
             <objects>
-                <controller id="jmP-mg-zUu">
+                <controller id="SkN-jl-xDg">
                     <items>
-                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="Second Page" textAlignment="center" baselineAdjustment="alignCenters" id="4UC-iZ-Zz1">
+                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="Hello Wrist!" textAlignment="center" id="g9N-hS-zAK">
                             <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                         </label>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="447" y="345"/>
+            <point key="canvasLocation" x="441" y="345"/>
         </scene>
     </scenes>
 </document>
