@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -113,7 +113,9 @@
 				A90D7EC9219D2D6100A3FC02 /* HelloWrist WatchKit Extension */,
 				A90D7EA5219D2D5E00A3FC02 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		A90D7EA5219D2D5E00A3FC02 /* Products */ = {
 			isa = PBXGroup;
@@ -240,7 +242,7 @@
 				};
 			};
 			buildConfigurationList = A90D7E9F219D2D5E00A3FC02 /* Build configuration list for PBXProject "HelloWrist" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
