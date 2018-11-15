@@ -12,6 +12,10 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     
+    @IBAction func contextInfoTapped() {
+        pushController(withName: "Info", context: nil)
+    }
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
