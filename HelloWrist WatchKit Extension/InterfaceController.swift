@@ -12,6 +12,12 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var messageLabel: WKInterfaceLabel!
+    
+    @IBAction func saySometings() {
+        messageLabel.setText("Hello Wrist!")
+    }
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
