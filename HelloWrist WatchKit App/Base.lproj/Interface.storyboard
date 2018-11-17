@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="klr-EI-eMs">
-    <device id="watch44" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,18 +12,92 @@
         <!--Interface Controller-->
         <scene sceneID="88R-eq-ycS">
             <objects>
-                <controller id="klr-EI-eMs">
+                <controller id="klr-EI-eMs" customClass="InterfaceController" customModule="HelloWrist_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Hello Wrist" textAlignment="center" id="dkj-y4-7XX">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" alpha="0.5" text="Conntext Menu" textAlignment="center" id="Z1y-Oe-wVt"/>
+                    </items>
                     <menu key="menu" id="57Z-Oj-NaY">
                         <items>
-                            <menuItem title="Info" icon="info" id="iMt-07-nUD"/>
-                            <menuItem title="Add" icon="add" id="JqB-V6-mwP"/>
-                            <menuItem title="Trash" icon="trash" id="Xf3-9H-tL7"/>
-                            <menuItem title="More" icon="more" id="Rlq-6e-yEc"/>
+                            <menuItem title="Info" icon="info" id="iMt-07-nUD">
+                                <connections>
+                                    <action selector="contextInfoTapped" destination="klr-EI-eMs" id="Whc-Fr-Qhp"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Add" icon="add" id="JqB-V6-mwP">
+                                <connections>
+                                    <action selector="contextAddTapped" destination="klr-EI-eMs" id="eo3-2P-KRi"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Trash" icon="trash" id="Xf3-9H-tL7">
+                                <connections>
+                                    <action selector="contextTrashTapped" destination="klr-EI-eMs" id="BDQ-eB-XOY"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="More" icon="more" id="Rlq-6e-yEc">
+                                <connections>
+                                    <action selector="contextMoreTapped" destination="klr-EI-eMs" id="htG-1f-qgg"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </controller>
             </objects>
             <point key="canvasLocation" x="486" y="121"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="Yfv-EJ-euf">
+            <objects>
+                <controller identifier="Info" id="7FV-4V-ryf" customClass="InterfaceController" customModule="HelloWrist_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="Info" textAlignment="center" id="BGs-Tf-YWT">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="692" y="121"/>
+        </scene>
+        <!--Trash-->
+        <scene sceneID="7vG-jH-dgH">
+            <objects>
+                <controller identifier="Trash" id="sqG-xd-KNf" customClass="InterfaceController" customModule="HelloWrist_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="Trash" textAlignment="center" id="hjd-GR-vxr">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="692" y="398"/>
+        </scene>
+        <!--Add-->
+        <scene sceneID="aPZ-Km-BqJ">
+            <objects>
+                <controller identifier="Add" id="hgj-fG-3Sk" customClass="InterfaceController" customModule="HelloWrist_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="Add" textAlignment="center" id="qlq-a3-FHJ">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="900" y="121"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="p37-U7-i94">
+            <objects>
+                <controller identifier="More" id="u7g-Lv-ngC" customClass="InterfaceController" customModule="HelloWrist_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="More" textAlignment="center" id="1wM-mi-6iQ">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="900" y="398"/>
         </scene>
     </scenes>
 </document>

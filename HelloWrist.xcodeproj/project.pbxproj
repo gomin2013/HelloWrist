@@ -78,7 +78,7 @@
 		A90D7EBE219D2D6100A3FC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90D7EC0219D2D6100A3FC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90D7EC5219D2D6100A3FC02 /* HelloWrist WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HelloWrist WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A90D7ECA219D2D6100A3FC02 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A90D7ECA219D2D6100A3FC02 /* InterfaceController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		A90D7ECC219D2D6100A3FC02 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A90D7ECE219D2D6100A3FC02 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		A90D7ED0219D2D6100A3FC02 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };

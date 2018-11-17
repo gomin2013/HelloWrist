@@ -11,25 +11,38 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+  
+  @IBAction func contextInfoTapped() {
+    pushController(withName: "Info", context: nil)
+  }
+  
+  @IBAction func contextAddTapped() {
+    pushController(withName: "Add", context: nil)
+  }
+  
+  @IBAction func contextTrashTapped() {
+    pushController(withName: "Trash", context: nil)
+  }
+  
+  @IBAction func contextMoreTapped() {
+    pushController(withName: "More", context: nil)
+  }
+  
+  
+  override func awake(withContext context: Any?) {
+    super.awake(withContext: context)
     
-    @IBAction func contextInfoTapped() {
-        pushController(withName: "Info", context: nil)
-    }
-    
-    override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-        
-        // Configure interface objects here.
-    }
-    
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
+    // Configure interface objects here.
+  }
+  
+  override func willActivate() {
+    // This method is called when watch view controller is about to be visible to user
+    super.willActivate()
+  }
+  
+  override func didDeactivate() {
+    // This method is called when watch view controller is no longer visible
+    super.didDeactivate()
+  }
+  
 }
