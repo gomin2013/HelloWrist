@@ -11,23 +11,18 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-  
   @IBAction func contextInfoTapped() {
     pushController(withName: "Info", context: nil)
   }
   
-  @IBAction func contextAddTapped() {
-    pushController(withName: "Add", context: nil)
+  @objc func contextMoreTapped() {
+    presentController(withNames: ["Add", "Trash"], contexts: nil)
   }
   
-  @IBAction func contextTrashTapped() {
-    pushController(withName: "Trash", context: nil)
+  override init() {
+    super.init()
+    addMenuItem(with: .more, title: "More", action: #selector(contextMoreTapped))
   }
-  
-  @IBAction func contextMoreTapped() {
-    pushController(withName: "More", context: nil)
-  }
-  
   
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)

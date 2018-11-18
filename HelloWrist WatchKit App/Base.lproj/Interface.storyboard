@@ -26,21 +26,6 @@
                                     <action selector="contextInfoTapped" destination="klr-EI-eMs" id="Whc-Fr-Qhp"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Add" icon="add" id="JqB-V6-mwP">
-                                <connections>
-                                    <action selector="contextAddTapped" destination="klr-EI-eMs" id="eo3-2P-KRi"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="Trash" icon="trash" id="Xf3-9H-tL7">
-                                <connections>
-                                    <action selector="contextTrashTapped" destination="klr-EI-eMs" id="BDQ-eB-XOY"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem title="More" icon="more" id="Rlq-6e-yEc">
-                                <connections>
-                                    <action selector="contextMoreTapped" destination="klr-EI-eMs" id="htG-1f-qgg"/>
-                                </connections>
-                            </menuItem>
                         </items>
                     </menu>
                 </controller>
@@ -60,19 +45,6 @@
             </objects>
             <point key="canvasLocation" x="692" y="121"/>
         </scene>
-        <!--Trash-->
-        <scene sceneID="7vG-jH-dgH">
-            <objects>
-                <controller identifier="Trash" id="sqG-xd-KNf" customClass="InterfaceController" customModule="HelloWrist_WatchKit_Extension">
-                    <items>
-                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="Trash" textAlignment="center" id="hjd-GR-vxr">
-                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
-                        </label>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="692" y="398"/>
-        </scene>
         <!--Add-->
         <scene sceneID="aPZ-Km-BqJ">
             <objects>
@@ -86,18 +58,18 @@
             </objects>
             <point key="canvasLocation" x="900" y="121"/>
         </scene>
-        <!--More-->
-        <scene sceneID="p37-U7-i94">
+        <!--Trash-->
+        <scene sceneID="qS3-FZ-65c">
             <objects>
-                <controller identifier="More" id="u7g-Lv-ngC" customClass="InterfaceController" customModule="HelloWrist_WatchKit_Extension">
+                <controller identifier="Trash" id="UMK-YP-arA" customClass="InterfaceController" customModule="HelloWrist_WatchKit_Extension">
                     <items>
-                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="More" textAlignment="center" id="1wM-mi-6iQ">
+                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="Trash" textAlignment="center" id="E2B-62-njW">
                             <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                         </label>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="900" y="398"/>
+            <point key="canvasLocation" x="1108" y="121"/>
         </scene>
     </scenes>
 </document>
