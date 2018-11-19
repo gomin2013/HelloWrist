@@ -9,67 +9,150 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Home-->
         <scene sceneID="88R-eq-ycS">
             <objects>
-                <controller id="klr-EI-eMs" customClass="InterfaceController" customModule="HelloWrist_WatchKit_Extension">
+                <controller identifier="Home" id="klr-EI-eMs" customClass="HomeInterfaceController" customModule="HelloWrist_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" alignment="center" verticalAlignment="center" text="Hello Wrist" textAlignment="center" id="dkj-y4-7XX">
-                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
-                        </label>
-                        <label width="1" alignment="center" verticalAlignment="center" alpha="0.5" text="Conntext Menu" textAlignment="center" id="Z1y-Oe-wVt"/>
+                        <group width="1" height="100" alignment="center" verticalAlignment="center" layout="vertical" id="SZI-3c-H1z">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Hello Wrist" textAlignment="center" id="dkj-y4-7XX">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                </label>
+                                <label alignment="center" verticalAlignment="center" alpha="0.5" text="WatchKit Controls" textAlignment="center" id="Z1y-Oe-wVt"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="center" verticalAlignment="center" title="View" id="tIu-Lz-y34">
+                            <connections>
+                                <action selector="homeButtonTaped" destination="klr-EI-eMs" id="w1e-oq-V3B"/>
+                            </connections>
+                        </button>
                     </items>
-                    <menu key="menu" id="57Z-Oj-NaY">
-                        <items>
-                            <menuItem title="Info" icon="info" id="iMt-07-nUD">
-                                <connections>
-                                    <action selector="contextInfoTapped" destination="klr-EI-eMs" id="Whc-Fr-Qhp"/>
-                                </connections>
-                            </menuItem>
-                        </items>
-                    </menu>
                 </controller>
             </objects>
             <point key="canvasLocation" x="486" y="121"/>
         </scene>
-        <!--Info-->
-        <scene sceneID="Yfv-EJ-euf">
+        <!--Labels-->
+        <scene sceneID="g9Y-K0-MLo">
             <objects>
-                <controller identifier="Info" id="7FV-4V-ryf" customClass="InterfaceController" customModule="HelloWrist_WatchKit_Extension">
+                <controller identifier="Labels" id="Yik-8I-LaL" customClass="LabelInterfaceController" customModule="HelloWrist_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="Info" textAlignment="center" id="BGs-Tf-YWT">
+                        <label width="1" alignment="center" verticalAlignment="center" text="Labels" textAlignment="center" id="VlE-ap-fBP">
                             <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                         </label>
+                        <button width="1" alignment="center" verticalAlignment="center" title="View" id="bNd-na-uvD">
+                            <connections>
+                                <action selector="labelsButtonTaped" destination="Yik-8I-LaL" id="NsD-TD-2Az"/>
+                            </connections>
+                        </button>
                     </items>
+                    <menu key="menu" id="EJj-cK-WOf">
+                        <items>
+                            <menuItem title="Date" icon="info" id="sws-Nc-HxV"/>
+                            <menuItem title="Timer" icon="info" id="7A7-jQ-Ik9"/>
+                        </items>
+                    </menu>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="692" y="121"/>
+            <point key="canvasLocation" x="749" y="121"/>
         </scene>
-        <!--Add-->
-        <scene sceneID="aPZ-Km-BqJ">
+        <!--Images-->
+        <scene sceneID="coG-6b-7Jx">
             <objects>
-                <controller identifier="Add" id="hgj-fG-3Sk" customClass="InterfaceController" customModule="HelloWrist_WatchKit_Extension">
+                <controller identifier="Images" id="gia-lf-Thc" customClass="ImageInterfaceController" customModule="HelloWrist_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="Add" textAlignment="center" id="qlq-a3-FHJ">
+                        <label width="1" alignment="center" verticalAlignment="center" text="Images" textAlignment="center" id="3O1-PO-sbO">
                             <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                         </label>
+                        <button width="1" alignment="center" verticalAlignment="center" title="View" id="m4r-KS-kYj">
+                            <connections>
+                                <action selector="imagesButtonTaped" destination="gia-lf-Thc" id="iIK-pE-qGF"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="900" y="121"/>
+            <point key="canvasLocation" x="1012" y="121"/>
         </scene>
-        <!--Trash-->
-        <scene sceneID="qS3-FZ-65c">
+        <!--Maps-->
+        <scene sceneID="bYw-rS-WNk">
             <objects>
-                <controller identifier="Trash" id="UMK-YP-arA" customClass="InterfaceController" customModule="HelloWrist_WatchKit_Extension">
+                <controller identifier="Maps" id="dIW-HO-e9e" customClass="MapInterfaceController" customModule="HelloWrist_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="50" alignment="center" verticalAlignment="center" text="Trash" textAlignment="center" id="E2B-62-njW">
+                        <label width="1" alignment="center" verticalAlignment="center" text="Maps" textAlignment="center" id="3rp-VQ-v10">
                             <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
                         </label>
+                        <button width="1" alignment="center" verticalAlignment="center" title="View" id="Hgp-Tc-GtU">
+                            <connections>
+                                <action selector="mapsButtonTaped" destination="dIW-HO-e9e" id="lTN-F7-MiZ"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1108" y="121"/>
+            <point key="canvasLocation" x="1277" y="121"/>
+        </scene>
+        <!--Date-->
+        <scene sceneID="qQk-Yu-HVU">
+            <objects>
+                <controller identifier="Date" id="DM0-Qp-b70">
+                    <items>
+                        <dateLabel width="1" alignment="center" verticalAlignment="center" textAlignment="center" id="CG6-d0-gSp">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                            <dateFormatterStyle key="dateStyle" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                        <label width="1" alignment="center" verticalAlignment="center" alpha="0.5" text="WKInterfaceDate" textAlignment="center" id="p4u-bY-EkM"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="749" y="420"/>
+        </scene>
+        <!--Timer-->
+        <scene sceneID="Tuz-ox-TAx">
+            <objects>
+                <controller identifier="Timer" id="xkp-eW-3Vj">
+                    <items>
+                        <timer width="1" alignment="center" verticalAlignment="center" textAlignment="center" id="GAa-LE-vo2">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <label width="1" alignment="center" verticalAlignment="center" alpha="0.5" text="WKInterfaceTimer" textAlignment="center" id="Aa5-nL-xd6"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="749" y="720"/>
+        </scene>
+        <!--Image-->
+        <scene sceneID="PcO-km-dYT">
+            <objects>
+                <controller identifier="Image" id="271-qV-U3S">
+                    <items>
+                        <group height="100" alignment="center" verticalAlignment="center" radius="5" id="CCW-Q4-jeq">
+                            <items>
+                                <imageView width="1" height="1" alignment="center" verticalAlignment="center" image="landscape-sea-sky-dusk" contentMode="scaleAspectFill" animationDuration="5" id="HIE-MU-Y4o"/>
+                            </items>
+                        </group>
+                        <label width="1" alignment="center" verticalAlignment="center" alpha="0.5" text="WKInterfaceImage" textAlignment="center" id="M2Q-Cb-9Cd"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1011" y="420"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="xh2-lK-Krh">
+            <objects>
+                <controller identifier="Map" id="F7q-Kj-MEa" customClass="MapInterfaceController" customModule="HelloWrist_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <map height="100" alignment="center" verticalAlignment="center" id="tkK-g5-XsT"/>
+                        <label width="1" alignment="center" verticalAlignment="center" alpha="0.5" text="WKInterfaceMap" textAlignment="center" id="DLM-Vb-wUw"/>
+                    </items>
+                    <connections>
+                        <outlet property="mapView" destination="tkK-g5-XsT" id="9Cg-BD-hLW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1276" y="420"/>
         </scene>
     </scenes>
 </document>

@@ -21,6 +21,10 @@
 		A90D7ECF219D2D6100A3FC02 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90D7ECE219D2D6100A3FC02 /* NotificationController.swift */; };
 		A90D7ED1219D2D6100A3FC02 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90D7ED0219D2D6100A3FC02 /* ComplicationController.swift */; };
 		A90D7ED3219D2D6100A3FC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90D7ED2219D2D6100A3FC02 /* Assets.xcassets */; };
+		A92F22A321A2BCDB0098098A /* HomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F22A221A2BCDB0098098A /* HomeInterfaceController.swift */; };
+		A92F22A521A2BD9E0098098A /* LabelInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F22A421A2BD9E0098098A /* LabelInterfaceController.swift */; };
+		A92F22A721A2BE170098098A /* ImageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F22A621A2BE170098098A /* ImageInterfaceController.swift */; };
+		A92F22A921A2BE2B0098098A /* MapInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F22A821A2BE2B0098098A /* MapInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		A90D7ED2219D2D6100A3FC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90D7ED4219D2D6100A3FC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90D7ED5219D2D6100A3FC02 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A92F22A221A2BCDB0098098A /* HomeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaceController.swift; sourceTree = "<group>"; };
+		A92F22A421A2BD9E0098098A /* LabelInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelInterfaceController.swift; sourceTree = "<group>"; };
+		A92F22A621A2BE170098098A /* ImageInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterfaceController.swift; sourceTree = "<group>"; };
+		A92F22A821A2BE2B0098098A /* MapInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +168,10 @@
 				A90D7ED2219D2D6100A3FC02 /* Assets.xcassets */,
 				A90D7ED4219D2D6100A3FC02 /* Info.plist */,
 				A90D7ED5219D2D6100A3FC02 /* PushNotificationPayload.apns */,
+				A92F22A221A2BCDB0098098A /* HomeInterfaceController.swift */,
+				A92F22A421A2BD9E0098098A /* LabelInterfaceController.swift */,
+				A92F22A621A2BE170098098A /* ImageInterfaceController.swift */,
+				A92F22A821A2BE2B0098098A /* MapInterfaceController.swift */,
 			);
 			path = "HelloWrist WatchKit Extension";
 			sourceTree = "<group>";
@@ -305,9 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92F22A321A2BCDB0098098A /* HomeInterfaceController.swift in Sources */,
 				A90D7ECF219D2D6100A3FC02 /* NotificationController.swift in Sources */,
+				A92F22A921A2BE2B0098098A /* MapInterfaceController.swift in Sources */,
 				A90D7ED1219D2D6100A3FC02 /* ComplicationController.swift in Sources */,
+				A92F22A721A2BE170098098A /* ImageInterfaceController.swift in Sources */,
 				A90D7ECD219D2D6100A3FC02 /* ExtensionDelegate.swift in Sources */,
+				A92F22A521A2BD9E0098098A /* LabelInterfaceController.swift in Sources */,
 				A90D7ECB219D2D6100A3FC02 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

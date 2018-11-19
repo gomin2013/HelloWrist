@@ -1,8 +1,8 @@
 //
-//  InterfaceController.swift
+//  LabelInterfaceController.swift
 //  HelloWrist WatchKit Extension
 //
-//  Created by MacBook Pro (Abroaders, Watthajak) on 15/11/2561 BE.
+//  Created by MacBook Pro (Abroaders, Watthajak) on 19/11/2561 BE.
 //  Copyright © 2561 watchOS. All rights reserved.
 //
 
@@ -10,7 +10,11 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class LabelInterfaceController: WKInterfaceController {
+  @IBAction func labelsButtonTaped() {
+    presentController(withNames: ["Date", "Timer"], contexts: nil)
+  }
+  
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
     
